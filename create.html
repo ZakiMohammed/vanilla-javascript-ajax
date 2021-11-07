@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create | AJAX Application using Fetch</title>
+
+    <style>
+        .form div {
+            margin-bottom: 10px;
+        }
+        .form div label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form div input, 
+        .form div textarea {
+            display: block;
+            width: 90%;
+        }
+        .blue {
+            color: deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Create a new Post</h1>
+
+    <a href="index.html">Home</a>
+    <hr>
+
+    <p class="blue" hidden>Processing please wait...</p>
+
+    <div class="form">
+        <div>
+            <label for="txtTitle">Title</label>
+            <input type="text" id="txtTitle" placeholder="Enter title">
+        </div>
+        <div>
+            <label for="txtBody">Body</label>
+            <textarea id="txtBody" placeholder="Enter body" rows="3"></textarea>
+        </div>
+        <div>
+            <button id="btnSubmit" type="button">Submit</button>
+        </div>
+    </div>
+
+    <script src="js/create.js"></script>
+
+</body>
+
+</html>
